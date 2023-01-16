@@ -1,0 +1,78 @@
+﻿@model GradeCalculatorProject.Models.StudentModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="text-xl-center">Edit Record</h1>
+
+<h4 class="text-xl-center">Student Details</h4>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Student_Regno" class="control-label"></label>
+                <input asp-for="Student_Regno" class="form-control" />
+                <span asp-validation-for="Student_Regno" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student_Name" class="control-label"></label>
+                <input asp-for="Student_Name" class="form-control" />
+                <span asp-validation-for="Student_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student_Dept" class="control-label"></label>
+                <input asp-for="Student_Dept" class="form-control" />
+                <span asp-validation-for="Student_Dept" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject1_Mark" class="control-label"></label>
+                <input asp-for="Subject1_Mark" class="form-control" />
+                <span asp-validation-for="Subject1_Mark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject2_Mark" class="control-label"></label>
+                <input asp-for="Subject2_Mark" class="form-control" />
+                <span asp-validation-for="Subject2_Mark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject3_Mark" class="control-label"></label>
+                <input asp-for="Subject3_Mark" class="form-control" />
+                <span asp-validation-for="Subject3_Mark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Total_Mark" class="control-label"></label>
+                <input asp-for="Total_Mark" class="form-control" dia/>
+                <span asp-validation-for="Total_Mark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Average_Mark" class="control-label"></label>
+                <input asp-for="Average_Mark" class="form-control" disabled />
+                <span asp-validation-for="Average_Mark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Grade" class="control-label"></label>
+                <input asp-for="Grade" class="form-control" disabled />
+                <span asp-validation-for="Grade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageFile" class="control-label"></label>
+                <input asp-for="ImageFile" accept="image/*" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

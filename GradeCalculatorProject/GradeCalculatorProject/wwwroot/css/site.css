@@ -1,0 +1,88 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px;
+    background-image: url('../image/background3.jpg');
+    background-size: cover;
+}
+h1 {
+    font-family: 'Copperplate Gothic';
+    font-size: 2.5em;
+    text-shadow: 2px 2px;
+}
+h2 {
+    font-family: 'Copperplate Gothic';
+    font-size: 2.5em;
+    text-shadow: 2px 2px;
+}
+h3 {
+    font-family: 'Copperplate Gothic';
+    font-size: 2.5em;
+    text-shadow: 2px 2px;
+}
+h4{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    text-shadow:1px 1px;
+}
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.label {
+    color: white;
+    padding: 8px;
+    font-family: Arial;
+}
+#Students {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#Students td, #Students th {
+        border: 1px solid #ddd;
+        padding: 8px;
+}
+
+#Students tr:nth-child(even) {
+        background-color: #f2f2f2;
+}
+
+#Students tr:hover {
+        background-color: #A9A9A9;
+    }
+
+    #Students th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: #1E90FF;
+        color: white;
+    }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: lightslategray;
+    font-family: sans-serif;
+}
+
+a:link {
+    color: white;
+}
